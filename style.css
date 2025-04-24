@@ -1,0 +1,100 @@
+body {
+    margin: 0 ;
+    padding: 0;
+    background: linear-gradient(135deg, #ffe0ae, #ffeddb);
+    font-family: 'chewy', cursive;
+    text-align: center;
+    color: rgb(253, 165, 13);
+}
+
+.cinema-container {
+    padding: 50px 20px ;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: rgb(248, 111, 6);
+    text-shadow: 3px 3px #fff9c4, -3px -3px #ffccbc;
+    margin-bottom: 40px;
+}
+
+.video-frame {
+    background-color: white;
+    border: 10px double #fb8c00;
+    border-radius: 25px;
+    padding: 10px;
+    margin: auto;
+    width: 90%;
+    box-shadow: 0 0 20px 10px #ffcc80;
+    transition: all 0.3s ease-in-out;
+}
+
+.video-frame:hover {
+    box-shadow: 0 0 30px 15px #ffa726;
+    transform : scale(1.02);
+}
+
+video {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.buttons{
+    margin-top: 25px;
+}
+
+.buttons button {
+    color: white;
+    background: linear-gradient(to right, #ff8a65, #ff7043);
+    border:  3px solid #fff3e0;
+    border-radius: 12px;
+    font-size: 1.2em;
+    margin: 15px;
+    padding: 12px 30px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+}
+
+.buttons button:hover {
+    background: #e64a19;
+    transform: scale(1.1) rotate(-1deg);
+  }
+
+  marquee {
+    margin-top: 30px;
+    color: #d84315;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-shadow: 1px 1px #ffffff;
+  }
+
+  /* موبایل (تا 600px) */
+@media (max-width: 600px) {
+    h1 {
+      font-size: 2em;
+    }
+    .buttons button {
+      width: 100%;
+      font-size: 1em;
+    }
+  }
+  
+  /* تبلت (بین 601px تا 1024px) */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    h1 {
+      font-size: 2.5em;
+    }
+    .video-frame {
+      width: 95%;
+    }
+  }
+  
+  /* لپ‌تاپ و دسکتاپ (بزرگ‌تر از 1024px) */
+  @media (min-width: 1025px) {
+    .video-frame {
+      width: 80%;
+    }
+  }

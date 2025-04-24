@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Movie Theater Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="cinema-container">
+        <h1>🎬 Garfield's Funny Cinema 🍿</h1>
+        <div class="video-frame">
+            <!-- <video src="media/trailer.mp4" controls></video> -->
+            <iframe src="https://www.youtube.com/embed/a8ry3cGoNHQ?feature=shared" width="100%" height="400" allow="accelerometer; autoplay; clipboard-write;."  frameborder="0"></iframe>
+        </div>
+        <div class="buttons">
+            <button onclick="document.querySelector('video') .currentTime=0 ; ">Play Again</button>
+            <button onclick="alert ('Rated with 5 Lasagnas!')">Rate Movie</button>
+        </div>
+        <marquee behavior="alternate">Garfield is back with more lasagna and laugter! 🍕😸</marquee>
+    </section>
+</body>
+</html>
